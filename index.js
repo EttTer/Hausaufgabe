@@ -9,7 +9,7 @@ return `<div class="todo__tasks">
   <div class="task__name">${name}</div>
   <div class="task__due">${due}</div>
 </div>
-<div class="task__done">${"x"}</div>
+<div class="task__done">${"❌"}</div>
 </div>`;
 
 else return `<div class="todo__tasks">
@@ -18,7 +18,7 @@ else return `<div class="todo__tasks">
   <div class="task__name">${name}</div>
   <div class="task__due">${due}</div>
 </div>
-<div class="task__done">${"✓"}</div>
+<div class="task__done">${"✔️"}</div>
 </div>`;
 };
 
