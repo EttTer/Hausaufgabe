@@ -92,27 +92,3 @@ checkbox.addEventListener("click", (event)=> {
 });
 
 
-//-----dosud všechno OK------
-
-
-
-
-/*let checkbox= document.querySelector(".todo__filter");
-
-checkbox.addEventListener('change', (event) => {
-
-  if (this.checked) {fetch('https://apps.kodim.cz/daweb/trening-api/apis/tasks-api/tasks?done=false')
-  .then((response)=> {
-      return response.json();
-  })
-  .then(renderTasks);
-  
-  };
-   else {
-        fetch('https://apps.kodim.cz/daweb/trening-api/apis/tasks-api/tasks')
-        .then((response)=> {
-            return response.json();
-        })
-        .then(renderTasks);
-  };
-});*/
