@@ -3,7 +3,7 @@ const Task = (props) => {
 
     let {done, due, id, name} = props;
     if (done===false) 
-return `<div class="todo__tasks">
+return `
 <div class="task">
 <div class="task__body">
   <div class="task__name">${name}</div>
@@ -12,7 +12,7 @@ return `<div class="todo__tasks">
 <div class="task__done">${"❌"}</div>
 </div>`;
 
-else return `<div class="todo__tasks">
+else return `
 <div class="task">
 <div class="task__body">
   <div class="task__name">${name}</div>
@@ -25,7 +25,7 @@ else return `<div class="todo__tasks">
 
 
 const renderTasks = (tasks) => {
-    const taskElm = document.querySelector(".task");
+    const taskElm = document.querySelector(".todo__tasks");
     taskElm.innerHTML= tasks
     .map((t) => Task(t))
     .join("");
@@ -37,7 +37,7 @@ const renderTasks = (tasks) => {
 
 fetch('https://apps.kodim.cz/daweb/trening-api/apis/tasks-api/tasks')
 .then((response)=> {
-    return response.json();
+    return response.json();git 
 })
 .then((data)=> console.log(data));*/
 
